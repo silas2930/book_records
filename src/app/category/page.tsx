@@ -14,7 +14,7 @@ const CreatePage = () => {
     createTag(data )
   }
 
-  const { mutate: createTag, isLoading } = useMutation({
+  const { mutate: createTag } = useMutation({
     mutationFn: (newTag: FormInputTags) => {
       return axios.post('/api/tags/create', newTag)
     },
