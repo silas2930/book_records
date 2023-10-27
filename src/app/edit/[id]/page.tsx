@@ -27,7 +27,7 @@ const EditPostPage: FC<EditPostPageProps> = ({ params }) => {
     }
   })
 
-  const { mutate: updatePost, isLoading: isLoadingSubmit } = useMutation({
+  const { mutate: updatePost } = useMutation({
     mutationFn: (newPost: FormInputPost) => {
       return axios.patch(`/api/posts/${id}`, newPost)
     },
