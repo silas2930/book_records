@@ -20,7 +20,7 @@ const FormTag: FC<FormTagsProps> = ({ submit }) => {
 
     return (
         <form onSubmit={handleSubmit(submit)} className='flex flex-col items-center justify-center gap-5 mt-10'>
-            <input type="text"  {...register("name", { required: true })} placeholder="Book title.." className="input input-bordered w-full max-w-lg" />
+            <input type="text"  {...register("name", { required: true })} placeholder="Category title.." className="input input-bordered w-full max-w-lg" />
 
             <button type='submit' className='btn btn-primary w-full max-w-lg'>Add</button>
         </form>

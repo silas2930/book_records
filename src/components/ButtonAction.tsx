@@ -49,7 +49,7 @@ const ButtonAction: FC<ButtonActionProps> = ({ id }) => {
         {isConfirmationOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-4 w-1/4">
-            <p>Are you sure you want to delete this post?</p>
+            <p>Are you sure you want to delete this book?</p>
             <div className="mt-4 flex justify-end">
               <button
                 onClick={confirmDelete}
