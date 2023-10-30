@@ -4,8 +4,8 @@ import { db } from '@/lib/db';
 import { BookOpenText } from 'lucide-react'
 
 
-async function getPosts() {
-  const response = await db.post.findMany({
+function getPosts() {
+  const response =  db.post.findMany({
     select: {
       id: true,
       title: true,
@@ -23,7 +23,7 @@ async function getPosts() {
 export default async function Home() {
 
   const posts = await getPosts()
-  const tags = await db.tag.findMany()
+  // const tags = await db.tag.findMany()
 
   return (
     <div>
