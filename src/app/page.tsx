@@ -24,7 +24,7 @@ export default async function Home() {
 
   const posts = await getPosts()
   // const tags = await db.tag.findMany()
-
+console.log(posts)
   return (
     <div>
       {/* <div className="mb-4 mt-10">
